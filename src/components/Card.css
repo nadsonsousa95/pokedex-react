@@ -1,0 +1,75 @@
+
+
+.Card{
+    background-color: #7AC74C1A;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px;
+    padding: 24px;
+    width: 324px;
+    transition: 0.8s;
+}
+
+.Card:hover{
+    transform: scale(1.1);
+}
+
+
+
+.Card img{
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+.Card span{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.CardFire{
+    background-color:#EE81301A;
+
+}
+
+.CardFire span{
+    background-color: #EE8130;
+}
+
+@media (max-width: 768px) {
+    .Card {
+        width: 90%;
+        padding: 16px;
+        margin: 12px auto;
+    }
+
+    .Card span {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .Card img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Card {
+        width: 100%;
+        padding: 12px;
+        margin: 12px auto;
+    }
+
+    .Card img {
+        width: 80px;
+    }
+
+    .Card span {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
