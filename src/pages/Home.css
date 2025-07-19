@@ -6,7 +6,9 @@ body{
 .Cards{
     display: flex;
     flex-wrap: wrap;
-    padding: 80px;
+    padding: 0px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .container{
