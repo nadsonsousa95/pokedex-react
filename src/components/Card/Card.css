@@ -3,7 +3,6 @@
 .Card{
     background-color: #ffffff;
     border-radius: 20px;
-    display: flex;
     margin: 20px;
     padding: 20px;
     width: 25%;
@@ -30,14 +29,30 @@
     object-fit: cover;
 }
 
+.info-container{
+  display: flex
+}
+
+.btn-detail{
+    background-color: #babcba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.8s;
+}
 
 .poison{
     background-color: #A33EA11A;
 }
 
 .CardFire{
-    background-color:#EE81301A;
+    background-color:#ff903b1d;
 }
+
 .CardWater{
     background-color: #6390F01A;
 }
@@ -47,6 +62,46 @@
 .CardFairy{
     background-color: #d281a018;
 }
+.CardElectric{
+    background-color: #F7D02C1A;
+}
+.CardGround{
+    background-color: #E2BF651A;
+}
+.CardPoison{
+    background-color: #A33EA11A;
+}
+.CardNormal{
+    background-color: #A8A8781A;
+}
+.CardIce{
+    background-color: #98D8D81A;
+}
+.CardFighting{
+    background-color: #C030281A;
+}
+.CardGhost{
+    background-color: #7058981A;
+}
+.CardDragon{
+    background-color: #7038F81A;
+}
+.CardBug{
+    background-color: #A6B91F1A;
+}
+.CardFlying{
+    background-color: #A98FF31A;
+}
+.CardRock{
+    background-color: #B6A1361A;
+}
+.CardPsychic{
+    background-color: #f9558630;
+}
+.CardSteel{
+    background-color: #B7B7CE1A;
+}
+
 
 .type {
     padding: 8px;
@@ -133,7 +188,7 @@
     }
 
     .Card img {
-        width: 100px;
+        width: 100%
     }
 }
 

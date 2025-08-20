@@ -1,0 +1,296 @@
+
+.card-detail{
+  display: flex;
+  overflow: none;
+  
+}
+
+.card-detail-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.034);
+    justify-content: center;
+}
+
+.card-detail-main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.034);
+    width: 40%;
+    color: #ffffff;
+    margin-right: 100px;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.back{
+  margin-left: 5px;
+}
+
+.card-detail-id{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.card-detail-info{
+    margin-top: 20px;
+}
+
+.card-detail-header .img{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card-detail-header .img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.about-content{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-items: left;
+    justify-content: left;
+
+    
+}
+
+.about-content h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.about{
+    justify-content: left;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+.height-weight{
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.034);
+    transition: 1s;
+}
+.height-weight:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.height-weight p{
+    font-size: 18px;
+    color: #434343;
+    margin: 1px;
+    text-transform: capitalize;
+}
+
+.poke-name{
+  text-align: left;
+  font-size: 32px;
+}
+
+.types{
+  text-align: left;
+}
+
+
+
+.abilities{
+    margin: 50px auto;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.stats{
+  text-align: left;
+}
+
+.stats ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.type.flying {
+  background-color: #a890f0;
+}
+.type.normal {
+  background-color: #a8a878;
+}
+.type.rock {
+  background-color: #763504;
+}
+.type.bug {
+  background-color: #606b04;
+}
+.type.fairy {
+  background-color: #ee99ac;
+}
+.type.ground {
+  background-color: #c29c34;
+}
+.type.fighting {
+  background-color: #c03028;
+}
+
+
+.style.grass{
+  color: #78c850;
+}
+.style.fire{
+  color: #f08030;
+}
+.style.water{
+  color: #6890f0;
+}
+.style.electric{
+  color: #f8d030;
+}
+.style.ice{
+  color: #98d8d8;
+}
+.style.poison{
+  color: #a040a0;
+}
+.style.psychic{
+  color: #f85888;
+}
+.style.ghost{
+  color: #705898;
+}
+.style.dragon{
+  color: #7038f8;
+}
+.style.dark{
+  color: #705848;
+}
+.style.steel{
+  color: #b8b8d0;
+}
+.style.flying{
+  color: #a890f0;
+}
+.style.normal{
+  color: #a8a878;
+}
+.style.rock{
+  color: #b8a038;
+}
+.style.bug{
+  color: #a8b820;
+}
+.style.fairy{
+  color: #ee99ac;
+}
+.style.ground{
+  color: #c29c34;
+}
+.style.fighting{
+  color: #c03028;
+}
+
+
+@media (max-width: 768px) {
+  
+  .card-detail{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .card-detail-header{
+    width: 300px;
+    margin: 30px;
+    padding: 20px;
+  }
+
+    .card-detail-main {
+      width: 100%;
+      margin-right: 0;
+      padding: 20px;
+      box-shadow: none;
+      min-height: auto;
+    }
+
+    .card-detail-header .img {
+      width: 100%;
+      height: auto;
+  }
+
+    .card-detail-main {
+      width: 100%;
+      margin-right: 0;
+      padding: 20px;
+    }
+
+    .about{
+      margin-top: 70px;
+    }
+
+    .about-content {
+        margin-top: -40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-detail-id {
+        font-size: 18px;
+    }
+
+    .height-weight {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .card-detail-info {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .poke-name, .types, .abilities, .stats {
+        text-align: center;
+    }
+
+    .stats{
+      margin: 40px auto;
+    }
+  
+}
+
