@@ -1,4 +1,4 @@
-# 🧢 Pokédex — Porque todo dev eventualmente coda uma 🐱‍👓
+## Pokédex — Porque todo dev eventualmente coda uma!😉
 
 ![Logo da Pokédex](./src/assets/Vector.svg)
 
@@ -12,15 +12,18 @@ Codar uma Pokédex é quase um rito de passagem, tipo "Hello World" 2.0.
 
 - Lista os **151 Pokémons clássicos de Kanto** (nostalgia mode: ON)
 - Permite **pesquisar** por nome em tempo real
-- Mostra **tipos** e **sprites oficiais**
-- Cards com **estilo especial para pokémons de fogo** 🔥
-- E claro: muito amor, muito CSS, e alguns `console.log()` esquecidos (de propósito, claro 😎)
+- Mostra **tipos** e **sprites oficiais e detalhes de cada Pokémon**
+- Cada card tem cores e estilos diferentes conforme o tipo do Pokémon (água, fogo, grama etc.).
+- É possível filtrar Pokémons por tipo direto na tela principal.
+- Ao clicar em um card, você é direcionado para uma tela de detalhes, com informações como peso, altura, habilidades e muito mais.
+- Na tela de detalhes, ao clicar na imagem do Pokémon, ele alterna entre a sprite frontal e traseira (pra quem gosta de ver os dois lados da batalha 😎).
 
 ---
 
 ## 🧪 Tecnologias usadas
 
 - React (com componentes funcionais e hooks)
+- React Router, e React Icons
 - Axios para requisições HTTP
 - CSS responsivo e estiloso
 - PokeAPI (`https://pokeapi.co/api/v2/pokemon`)
