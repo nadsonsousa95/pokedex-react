@@ -189,6 +189,9 @@ body{
 @media (max-width: 480px) {
      .Cards {
     flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
   }
 
     .container {
