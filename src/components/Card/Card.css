@@ -3,14 +3,13 @@
 .Card{
     background-color: #ffffff;
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     width: 25%;
     transition: 0.8s;
     cursor: pointer;
     box-shadow: 0 8px 6px rgba(0, 0, 0, 0.034);
     text-align: left;
-    
 }
 
 .Card:hover{
