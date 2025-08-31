@@ -8,13 +8,11 @@ body{
 .Cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;     
+    gap: 10px;              
     margin: 0 auto;
-    padding: 0;
-    width: 100%; 
-    max-width: 1200px; 
+    width: 100%;
 }
 
 .container{
