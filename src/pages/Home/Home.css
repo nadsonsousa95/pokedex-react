@@ -27,7 +27,7 @@ body{
     margin-top: 30px;
 }
 
-input{
+.search-input{
     width: 100%;;
     height: 56px;
     background-color: #ffffff;
@@ -42,7 +42,7 @@ input{
     color: #888888;
 }
 
-input:focus{
+.search-input:focus{
     outline: none;
     box-shadow: 0 0 0 3px rgba(246, 81, 59, 0.5);
     transition: 0.3s;
@@ -79,6 +79,8 @@ input:focus{
     justify-content: center;
     margin-top: 10px;
     margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 .button-reset{
     background-color: rgb(181, 4, 4);
@@ -122,28 +124,24 @@ input:focus{
     border-radius: 20px;
 }
 
-.filter .filter-type:focus{
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(181, 4, 4);
-    font-weight: 600;
-    transition: 0.5s;
-    background-color: rgb(181, 4, 4);
-}
-
-.filter .filter-type:active{
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(181, 4, 4);
-    font-weight: 600;
-    transition: 0.5s;
-    background-color: rgb(181, 4, 4);
-}
-
 
 .filter .filter-type:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
 
+.filter-type-active{
+    font-size: 16px;
+    color:  #F1F5F9;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    background-color:rgb(181, 4, 4);
+    border: 2px solid rgb(181, 4, 4);
+    font-weight: 600;
+    border-radius: 20px;
+}
 
 
 
@@ -155,20 +153,18 @@ input:focus{
         margin: 0 auto;
     }
 
-    .container {
-        margin: 0 auto;
-        width: 90%;
-    }
+
 
     .container h1 {
         font-size: 1.5rem;
     }
 
-    input {
+    .search-input {
         height: 48px;
         font-size: 0.95rem;
         width: 90%;
         margin: 0 auto;
+        padding-left: 50px;
     }
 
     .logo {
@@ -181,14 +177,11 @@ input:focus{
     }
 
     .button-reset {
-        width: 42%;
+        width: 50%;
         margin: 20px auto;
-        
     }
 
-    .filter-type{
-        margin: 5px;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -196,14 +189,25 @@ input:focus{
         padding: 16px;
     }
 
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
     .container h1 {
         font-size: 1.25rem;
     }
 
-    input {
+    .search-input {
         height: 44px;
         font-size: 0.9rem;
-        padding: 6px 12px;
+        padding: 12px;
+        padding-left: 50px;
+    }
+
+    .button-reset {
+        width: 50%;
+        margin: 20px auto;
     }
 
     .logo {

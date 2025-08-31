@@ -12,6 +12,7 @@ export function Home() {
   const [searchPoke, setSearchPoke] = useState('');
   const [searchtype, setSearchtype] = useState('');
   const [loading, setLoading] = useState(true);
+  const [isFiltered, setIsFiltered] = useState(false);
 
   const api = `https://pokeapi.co/api/v2/pokemon?limit=151`;
 
@@ -64,6 +65,17 @@ export function Home() {
     'ice', 'fighting', 'ghost', 'dragon', 'bug', 'flying', 'rock', 'psychic', 'steel'
   ];
 
+  const filterType = (type) =>{
+    setSearchtype(type);
+    setIsFiltered(true);
+  }
+
+  const removeFilterType = () =>{
+    setSearchtype('')
+    setIsFiltered(false);
+    setSearchPoke('')
+  } 
+
   if (loading) return (<div>
             <img className='logo' src={logo} alt="Logo Pokedex" />
               <p>Carregando Pokémons...</p>
@@ -89,12 +101,12 @@ export function Home() {
 
         <div className='types'>
           {types.map((type) => (
-            <button className='filter-type' key={type} onClick={() => setSearchtype(type)}>
+            <button className={isFiltered && searchtype == type ? 'filter-type-active' : 'filter-type'} key={type} onClick={() => filterType(type)}>
               {type.charAt(0).toUpperCase() + type.slice(1)}
             </button>
           ))}
         </div>
-        <button className='button-reset' onClick={() => setSearchtype('')}><FaSearch size={15} />Limpar Filtros</button>
+        <button className='button-reset' onClick={() => removeFilterType()}><FaSearch size={15} />Limpar Filtros</button>
       </div>
 
       <div>

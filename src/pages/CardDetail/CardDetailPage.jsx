@@ -59,8 +59,8 @@ export default function CardDetailPage() {
            <IoIosReturnLeft size={25} />
            <span className='back' >Voltar</span>
         </div>
+        <span className="card-detail-id">N° {'0' + pokemon.id} </span>
         <header onClick={handleClick} className={`card-detail-header`}>
-            <span className="card-detail-id">N° {'0' + pokemon.id} </span>
             <img className='img' src={image}></img>
         </header>
     </div>
