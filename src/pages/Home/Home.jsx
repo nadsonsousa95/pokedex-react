@@ -1,7 +1,7 @@
-import logo from './../assets/Vector.svg';
+import logo from '../../assets/Vector.svg';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import Card from '../components/Card/Card.jsx';
+import Card from '../../components/Card/Card.jsx';
 import './Home.css';
 import { FaSearch } from "react-icons/fa";
 

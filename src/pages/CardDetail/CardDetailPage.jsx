@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './CardDetailPage.css';
-import logo from '../assets/Vector.svg';
+import logo from '../../assets/Vector.svg';
 import { FaWeight } from "react-icons/fa";
 import { FaW } from 'react-icons/fa6';
 import { GiBodyHeight } from "react-icons/gi";
@@ -59,8 +59,8 @@ export default function CardDetailPage() {
            <IoIosReturnLeft size={25} />
            <span className='back' >Voltar</span>
         </div>
-        <span className="card-detail-id">N° {pokemon.id}</span>
         <header onClick={handleClick} className={`card-detail-header`}>
+            <span className="card-detail-id">N° {'0' + pokemon.id} </span>
             <img className='img' src={image}></img>
         </header>
     </div>

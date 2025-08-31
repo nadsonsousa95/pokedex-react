@@ -11,8 +11,9 @@
     align-items: center;
     margin-bottom: 20px;
     width: 400px;
+    height: 400px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 50px;
     background-color: #f5f5f5;
     border-radius: 20px;
     box-shadow: 0 8px 6px rgba(0, 0, 0, 0.034);
@@ -30,6 +31,7 @@
     margin-right: 100px;
     height: 100%;
     min-height: 100vh;
+    margin-top: 0;
 }
 
 .back-button {
@@ -48,8 +50,10 @@
 
 .card-detail-id{
     font-size: 20px;
-    color: white;
-    font-weight: 600;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -50px;
 }
 
 .card-detail-info{
@@ -78,8 +82,6 @@
     margin-bottom: 20px;
     justify-items: left;
     justify-content: left;
-
-    
 }
 
 .about-content h2{
@@ -231,22 +233,23 @@
   .card-detail{
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .card-detail-header{
     width: 300px;
     margin: 30px;
     padding: 20px;
+    
   }
 
     .card-detail-main {
       width: 100%;
-      margin-right: 0;
       padding: 20px;
       box-shadow: none;
       min-height: auto;
+      margin: 0;
+      margin-top: 0;
     }
 
     .card-detail-header .img {

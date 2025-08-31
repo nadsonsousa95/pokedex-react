@@ -130,6 +130,15 @@ input:focus{
     background-color: rgb(181, 4, 4);
 }
 
+.filter .filter-type:active{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(181, 4, 4);
+    font-weight: 600;
+    transition: 0.5s;
+    background-color: rgb(181, 4, 4);
+}
+
+
 .filter .filter-type:hover{
     transform: scale(1.1);
     transition: 0.5s;
