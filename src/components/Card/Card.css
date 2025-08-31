@@ -176,7 +176,7 @@
 
 @media (max-width: 768px) {
     .Card {
-        width: 90%;
+        width: 100%;
         padding: 16px;
         margin: 12px auto;
     }
